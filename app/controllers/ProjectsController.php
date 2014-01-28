@@ -2,8 +2,9 @@
 
 class ProjectsController extends BaseController {
 
-    public function __construct() {
+     public function __construct() {
         $this->beforeFilter('auth');
+        $this->beforeFilter('csrf', array('on'=>'post'));
     }
 	/**
 	 * Display a listing of the resource.
@@ -22,7 +23,8 @@ class ProjectsController extends BaseController {
 	 */
 	public function create()
 	{
-        return View::make('projects.create');
+        $project = new Project;
+        return View::make('projects.create', compact('project'));
 	}
 
 	/**
@@ -32,7 +34,21 @@ class ProjectsController extends BaseController {
 	 */
 	public function store()
 	{
-		//
+        $validate = Validator::make(Input::all(), Project::$rules);
+
+        if($validate->passes()) {
+            $project = new Project();
+            $project->create(Input::all());
+            return Redirect::to('dashboard')
+                ->with('message', 'Project Created')
+                ->with('type', 'success');
+        }
+
+        return Redirect::to('projects/create')
+            ->with('message', "Looks like there is an issue with the form")
+            ->with('type', "danger")
+            ->withErrors($validate)
+            ->withInput();
 	}
 
 	/**
