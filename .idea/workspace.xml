@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64bbcd4a-fca8-42f6-bfd2-4beeff3af0ef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/_form_errors.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/auth.iml" afterPath="$PROJECT_DIR$/.idea/PML4.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LaravelVsRails-sf/erierb-laravel/application/migrations/2012_11_23_191016_add_admin_to_users_table.php" afterPath="$PROJECT_DIR$/../LaravelVsRails-sf/erierb-laravel/application/migrations/2012_11_23_191016_add_admin_to_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Project.php" afterPath="$PROJECT_DIR$/app/models/Project.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ProjectsController.php" afterPath="$PROJECT_DIR$/app/controllers/ProjectsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/User.php" afterPath="$PROJECT_DIR$/app/models/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/create.blade.php" afterPath="$PROJECT_DIR$/app/views/projects/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboards/index.blade.php" afterPath="$PROJECT_DIR$/app/views/dashboards/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/main.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/main.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="auth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,34 +31,79 @@
       <file leaf-file-name="ProjectsController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/ProjectsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="32" selection-start="771" selection-end="771" vertical-scroll-proportion="0.30246451" vertical-offset="165" max-vertical-offset="1605">
+            <state line="47" column="9" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.42259413" vertical-offset="301" max-vertical-offset="1650">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notifications.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/notifications.blade.php">
+      <file leaf-file-name="BelongsToMany.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="27" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
+            <state line="650" column="54" selection-start="16883" selection-end="16889" vertical-scroll-proportion="0.0" vertical-offset="9395" max-vertical-offset="14985">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/dashboards/index.blade.php">
+      <file leaf-file-name="Project.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="5" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+            <state line="2" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/main.blade.php">
+      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="40" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4260">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ide_helper.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ide_helper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="30" selection-start="4012" selection-end="4012" vertical-scroll-proportion="0.0" vertical-offset="796" max-vertical-offset="1740">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../LaravelVsRails-sf/erierb-laravel/laravel/input.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="27" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0" vertical-offset="624" max-vertical-offset="4575">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FormBuilder.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="422" column="9" selection-start="10388" selection-end="10388" vertical-scroll-proportion="0.0" vertical-offset="5592" max-vertical-offset="15165">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/projects/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="24" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../LaravelVsRails-sf/erierb-laravel/laravel/database/eloquent/model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="200" column="27" selection-start="4209" selection-end="4209" vertical-scroll-proportion="0.0" vertical-offset="2517" max-vertical-offset="12135">
               <folding />
             </state>
           </provider>
@@ -89,11 +127,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/Issue.php" />
         <option value="$PROJECT_DIR$/app/controllers/IssuesController.php" />
         <option value="$PROJECT_DIR$/app/views/issues/show.blade.php" />
         <option value="$PROJECT_DIR$/app/views/projects/show.blade.php" />
-        <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/app/filters.php" />
         <option value="$PROJECT_DIR$/app/views/nav.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
@@ -102,18 +138,20 @@
         <option value="$PROJECT_DIR$/app/models/Project.php" />
         <option value="$PROJECT_DIR$/../l4commerce/final-source/app/views/_form_errors.blade.php" />
         <option value="$PROJECT_DIR$/app/views/_form_errors.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/projects/create.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/main.blade.php" />
+        <option value="$PROJECT_DIR$/app/models/User.php" />
+        <option value="$PROJECT_DIR$/app/views/projects/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/storage/logs/laravel.log" />
         <option value="$PROJECT_DIR$/app/controllers/ProjectsController.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1278" />
+    <option name="x" value="958" />
     <option name="y" value="22" />
-    <option name="width" value="1278" />
-    <option name="height" value="1418" />
+    <option name="width" value="958" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -616,6 +654,76 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PML4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PML4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PML4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PML4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PML4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PML4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -717,15 +825,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1278" y="22" width="1278" height="1418" extended-state="0" />
+    <frame x="958" y="22" width="958" height="1058" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.76058203" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3004695" sideWeight="0.87034386" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25438598" sideWeight="0.76058203" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21576525" sideWeight="0.87034386" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34561127" sideWeight="0.244709" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -745,21 +853,21 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24034749" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12965617" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23275863" sideWeight="0.4275256" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34561127" sideWeight="0.244709" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.670571" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25438598" sideWeight="0.76058203" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30877742" sideWeight="0.7596525" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21576525" sideWeight="0.87034386" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -776,76 +884,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../l4commerce/final-source/app/views/users/newaccount.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="103" selection-end="337" vertical-scroll-proportion="0.19169329" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../l4commerce/final-source/app/views/users/signin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="16" selection-start="455" selection-end="455" vertical-scroll-proportion="0.33546326" vertical-offset="0" max-vertical-offset="626">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/_form_errors.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.07188498" vertical-offset="0" max-vertical-offset="626">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="46" selection-end="46" vertical-scroll-proportion="0.07188498" vertical-offset="0" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="282" selection-end="282" vertical-scroll-proportion="0.2311248" vertical-offset="0" max-vertical-offset="649">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../LaravelVsRails-sf/erierb-laravel/laravel/redirect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="60" selection-end="60" vertical-scroll-proportion="0.046224963" vertical-offset="0" max-vertical-offset="2880">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ide_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="33" selection-start="4477" selection-end="4477" vertical-scroll-proportion="0.3207547" vertical-offset="1101" max-vertical-offset="1740">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="260" column="5" selection-start="6005" selection-end="6005" vertical-scroll-proportion="0.525641" vertical-offset="3557" max-vertical-offset="15165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_01_27_212156_create_projects_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="19" selection-start="565" selection-end="565" vertical-scroll-proportion="0.3136669" vertical-offset="0" max-vertical-offset="1339">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../l4commerce/final-source/app/controllers/ProductsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="28" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.40328604" vertical-offset="0" max-vertical-offset="1339">
@@ -877,13 +915,94 @@
     <entry file="file://$PROJECT_DIR$/app/views/layouts/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="40" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+          <folding>
+            <marker date="1390937489000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1390937489000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1390937489000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1390937489000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1390937489000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1390937489000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1390937489000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../LaravelVsRails-sf/erierb-laravel/laravel/database/eloquent/model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="200" column="27" selection-start="4209" selection-end="4209" vertical-scroll-proportion="0.0" vertical-offset="2517" max-vertical-offset="12135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="422" column="9" selection-start="10388" selection-end="10388" vertical-scroll-proportion="0.0" vertical-offset="5592" max-vertical-offset="15165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ide_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="30" selection-start="4012" selection-end="4012" vertical-scroll-proportion="0.0" vertical-offset="796" max-vertical-offset="1740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="6" selection-start="45" selection-end="45" vertical-scroll-proportion="0.04945055" vertical-offset="0" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../LaravelVsRails-sf/erierb-laravel/laravel/input.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="27" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0" vertical-offset="624" max-vertical-offset="4575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/projects/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="24" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/storage/logs/laravel.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="137115">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="650" column="54" selection-start="16883" selection-end="16889" vertical-scroll-proportion="0.0" vertical-offset="9395" max-vertical-offset="14985">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ProjectsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="32" selection-start="771" selection-end="771" vertical-scroll-proportion="0.30246451" vertical-offset="165" max-vertical-offset="1605">
+        <state line="47" column="9" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.42259413" vertical-offset="301" max-vertical-offset="1650">
           <folding />
         </state>
       </provider>

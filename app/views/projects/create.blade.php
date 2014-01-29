@@ -3,6 +3,7 @@
 
 @section('content')
 
+
 <h2>Create a Project</h2>
 
 @include('_form_errors')
@@ -33,6 +34,10 @@
     <div class="checkbox">
             {{ Form::label('active', 'Active') }}
             {{ Form::checkbox('active') }}
+    </div>
+
+    <div class="form-group">
+        {{ Form::select('people[]', $people, array(), array('multiple' => true)) }}
     </div>
 
     {{ Form::submit('Create Project', array('class' => 'btn btn-success')) }}

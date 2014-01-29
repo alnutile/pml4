@@ -24,6 +24,15 @@ class User extends ConfideUser {
         return (bool) $this->admin;
     }
 
+    static public function allPeopleSelectOptions() {
+        $people = User::all();
+        $options = array();
+        foreach($people as $person) {
+            $options[$person->id] = $person->email;
+        }
+        return $options;
+    }
+
     public static $rules = array(
         'email' => 'required|email|unique:users',
         'password' => 'required|between:8,32|confirmed',

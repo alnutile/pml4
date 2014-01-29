@@ -24,7 +24,8 @@ class ProjectsController extends BaseController {
 	public function create()
 	{
         $project = new Project;
-        return View::make('projects.create', compact('project'));
+        $people = User::allPeopleSelectOptions();
+        return View::make('projects.create', compact('project', 'people'));
 	}
 
 	/**
@@ -37,10 +38,12 @@ class ProjectsController extends BaseController {
         $validate = Validator::make(Input::all(), Project::$rules);
 
         if($validate->passes()) {
-            $project = new Project();
-            $project->create(Input::all());
+            $project = Project::create(Input::all());
+            $people = Input::get('people');
+            $date = $project->created_at;
+            $project->users()->attach( (array) $people, array('created_at' => $date, 'updated_at' => $date) );
             return Redirect::to('dashboard')
-                ->with('message', 'Project Created')
+                ->with('message', "Project Created " . $project->name . ' - ' . $project->id)
                 ->with('type', 'success');
         }
 
