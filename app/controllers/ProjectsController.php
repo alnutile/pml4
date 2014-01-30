@@ -3,7 +3,7 @@
 class ProjectsController extends BaseController {
 
      public function __construct() {
-        $this->beforeFilter('auth');
+        $this->beforeFilter('admin');
         $this->beforeFilter('csrf', array('on'=>'post'));
     }
 	/**
@@ -23,9 +23,11 @@ class ProjectsController extends BaseController {
 	 */
 	public function create()
 	{
-        $project = new Project;
-        $people = User::allPeopleSelectOptions();
-        return View::make('projects.create', compact('project', 'people'));
+        $model = new Project;
+        $options_all = User::allPeopleSelectOptions();
+        $options_selected = array();
+        $submit = array('test' => "Create Project");
+        return View::make('projects.create', compact('model', 'destination', 'submit', 'options_all', 'options_selected'));
 	}
 
 	/**

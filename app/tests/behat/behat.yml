@@ -1,0 +1,13 @@
+default:
+  paths:
+    features: 'features'
+  extensions:
+    Behat\MinkExtension\Extension:
+      goutte:
+        guzzle_parameters:
+          curl.options:
+            CURLOPT_PORT: 8000
+      selenium2: ~
+      base_url: 'http://localhost:8000'
+      browser_name: safari
+

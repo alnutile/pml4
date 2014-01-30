@@ -5,6 +5,9 @@
     <div class="panel panel-default">
         <div class="panel-heading">Project: {{$project->name}}</div>
         <div class="panel-body">
+
+            <div class="well">{{ $project->description }}</div>
+
             <h2>Issues</h2>
 
             <table class="table table-condensed">
@@ -47,6 +50,16 @@
             </ul>
         </div>
     </div>
+    @if(Auth::user()->admin == 1)
+    <div class="panel panel-default">
+        <div class="panel-heading">Actions</div>
+        <div class="panel-body">
+            <div class="panel-body">
+                {{ HTML::linkRoute('projects.edit', 'Edit Project', $project->id, array('class' => 'btn btn-info')) }}
+            </div>
+        </div>
+    </div>
+    @endif
 </div>
 
 @stop
