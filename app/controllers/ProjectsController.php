@@ -78,7 +78,11 @@ class ProjectsController extends BaseController {
 	 */
 	public function edit($id)
 	{
-        return View::make('projects.edit');
+        $model = Project::find($id);
+        $options_all = User::allPeopleSelectOptions();
+        $options_selected = $model->getUsersSelectedOptionList();
+
+        return View::make('projects.edit', compact('model', 'options_all', 'options_selected'));
 	}
 
 	/**

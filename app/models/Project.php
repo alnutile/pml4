@@ -18,6 +18,15 @@ class Project extends Eloquent {
         return $this->users->toArray();
     }
 
+    public function getUsersSelectedOptionList() {
+        $people = $this->users;
+        $options = array();
+        foreach($people as $person) {
+            $options[] = $person->id;
+        }
+        return $options;
+    }
+
     public function issues()
     {
         return $this->hasMany('Issue');

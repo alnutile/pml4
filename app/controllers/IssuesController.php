@@ -17,9 +17,13 @@ class IssuesController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create($project_id)
 	{
-        return View::make('issues.create');
+        $project = Project::find($project_id);
+        $model = new Issue;
+        $user = Auth::user();
+        $submit = array('name' => "Create issue");
+        return View::make('issues.create', compact('project', 'model', 'submit', 'user'));
 	}
 
 	/**
@@ -29,7 +33,16 @@ class IssuesController extends BaseController {
 	 */
 	public function store()
 	{
-		//
+		$validate = Validator::make(Input::all(), Issue::$rules);
+        if($validate->passes()) {
+
+        }
+        $project_id = Input::get('project_id');
+        return Redirect::to("projects/{$project_id}/issues/create")
+            ->with('message', "Seems to be an error with the form please review below")
+            ->with('type', "danger")
+            ->withErrors($validate)
+            ->withInput();
 	}
 
 	/**

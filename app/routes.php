@@ -34,6 +34,6 @@ Route::get('dashboard', 'DashboardController@index');
 
 Route::resource('projects', 'ProjectsController');
 Route::resource('users', 'UserController');
-Route::resource('issues', 'IssuesController');
+Route::resource('projects.issues', 'IssuesController');
 
 Route::resource('comments', 'CommentsController');

@@ -27,7 +27,7 @@
                 <tr>
                     @endif
                     <td>{{ $issue['id'] }}</td>
-                    <td>{{ HTML::linkRoute('issues.show', $issue['name'], $issue['id']) }}</td>
+                    <td>{{ HTML::linkRoute('projects.issues.show', $issue['name'], array($project->id, $issue['id'])) }}</td>
                     <td>{{ $issue['active'] }}</td>
                     <td>{{ $issue['description'] }}</td>
                 </tr>
@@ -50,16 +50,22 @@
             </ul>
         </div>
     </div>
-    @if(Auth::user()->admin == 1)
     <div class="panel panel-default">
         <div class="panel-heading">Actions</div>
         <div class="panel-body">
+            @if(Auth::user()->admin == 1)
+                <div class="panel-body">
+                    {{ HTML::linkRoute('projects.edit', 'Edit Project', $project->id, array('class' => 'btn btn-info')) }}
+                </div>
+            @endif
+
             <div class="panel-body">
-                {{ HTML::linkRoute('projects.edit', 'Edit Project', $project->id, array('class' => 'btn btn-info')) }}
+                {{ HTML::linkRoute('projects.issues.create', 'Create Issue', $project->id, array('class' => 'btn btn-info')) }}
             </div>
         </div>
     </div>
-    @endif
+
+
 </div>
 
 @stop

@@ -1,0 +1,23 @@
+default:
+    extensions:
+      Behat\MinkExtension\Extension:
+        goutte:
+          guzzle_parameters:
+            curl.options:
+              CURLOPT_PORT: 8888
+        selenium2: ~
+        base_url: 'http://localhost'
+        browser_name: safari
+    formatter:
+            name:                       pretty
+            parameters:
+                decorated:              true
+                verbose:                false
+                time:                   true
+                language:               en
+                output_path:            null
+                multiline_arguments:    true
+    paths:
+        features: app/tests/acceptance
+        bootstrap: app/tests/acceptance/contexts
+
