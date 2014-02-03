@@ -39,6 +39,7 @@ class IssuesController extends BaseController {
             $issue->active = (isset($active)) ? 1 : 0;
             $issue->description = Input::get('description');
             $issue->save();
+            $this->notify($issue);
             return Redirect::to("projects/$issue->project_id")
                 ->with('message', "Issue Created #" . $issue->id)
                 ->with('type', 'success');
@@ -50,6 +51,16 @@ class IssuesController extends BaseController {
             ->withErrors($validate)
             ->withInput();
 	}
+
+    public function notify($issue)
+    {
+        $project = Project::find($issue->project_id);
+        $users = $project->getUsersEmails();
+        foreach($users as $key => $value) {
+            $mailer = new Mailers\Issues($value);
+            $mailer->new_issue($issue)->deliver();
+        }
+    }
 
 	public function show($pid, $issue_id)
     {

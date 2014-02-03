@@ -25,7 +25,7 @@
                             {{ $comment['body'] }}
                         </td>
                         <td>
-                            <?php echo date('M d h:m', strtotime($comment['created_at'])); ?>
+                            <?php echo date('M d h:i', strtotime($comment['created_at'])); ?>
                         </td>
                     </tr>
                 @endforeach

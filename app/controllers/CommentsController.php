@@ -35,9 +35,20 @@ class CommentsController extends BaseController {
             $comment->issue_id = Input::get('issue_id');
             $comment->github_id = Input::get('github_id');
             $comment->save();
+            $mailed = $this->notify($comment, $project_id, $issue_id);
+            $sent = implode(', ', $mailed["results"][1]);
+            $failed = implode(', ', $mailed["results"][0]);
             return Redirect::to("projects/$project_id/issues/$issue_id")
                 ->with('message', "Comment Created #" . $comment->id)
-                ->with('type', 'success');
+                ->with('type', 'success')
+                ->with('emailsSent', "Emails sent {$mailed['sent']}")
+                ->with('type', 'success')
+                ->with('emailsFailed', "Emailed failed {$mailed['failed']}")
+                ->with('type', 'warning')
+                ->with('emailsWho', "Emailed {$sent}")
+                ->with('type', 'success')
+                ->with('emailsWhoFailed', "Emailed Failed {$failed}")
+                ->with('type', 'danger');
         }
         return Redirect::to("projects/{$project_id}/issues/$issue_id/comments/create")
             ->with('message', "Seems to be an error with the form please review below")
@@ -45,6 +56,22 @@ class CommentsController extends BaseController {
             ->withErrors($validate)
             ->withInput();
 	}
+
+    public function notify($comment, $project_id, $issue_id)
+    {
+        $mailed[0] = array();
+        $mailed[1] = array();
+        $mailed['results'] = null;
+        $project = Project::find($project_id);
+        $issue = Issue::find($issue_id);
+        $users = $project->getUsersEmails();
+        foreach($users as $key => $value) {
+            $mailer = new Mailers\Comments($value);
+            $results = $mailer->new_comment(compact('comment', 'project',  'issue'))->deliver();
+            $mailed[$results][] = $value;
+        }
+        return array('sent' => count($mailed[1]), 'failed' => count($mailed[0]), 'results' => $mailed);
+    }
 
 	/**
 	 * Display the specified resource.
