@@ -8,8 +8,9 @@
 
 @include('_form_errors')
 
+
 <div class="col-md-6">
-    {{ Form::model($model, array('route' => array('projects.update'))) }}
+    {{ Form::model($model, array('route' => array('projects.update' , $model->id), 'method' => 'PUT')) }}
     @include('projects._form')
     {{ Form::submit('Update Project', array('class' => 'btn btn-success')) }}
 

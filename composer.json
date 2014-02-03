@@ -12,14 +12,18 @@
         "behat/mink-selenium-driver": "*",
         "behat/mink-selenium2-driver": "*",
         "behat/mink-extension": "*",
-        "behat/mink-sahi-driver": "*"
+        "behat/mink-sahi-driver": "*",
+        "zizaco/factory-muff": "dev-master",
+        "doctrine/dbal": "dev-master"
     },
 	"require": {
 		"laravel/framework": "4.1.*",
         "way/generators": "dev-master",
         "zizaco/confide": "3.1.x",
         "zizaco/testcases-laravel": "dev-master",
-        "guilhermeguitte/behat-laravel": "dev-master"
+        "guilhermeguitte/behat-laravel": "dev-master",
+        "way/laravel-test-helpers": "dev-master",
+        "mockery/mockery": "0.9.*@dev"
         },
 	"autoload": {
 		"classmap": [

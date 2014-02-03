@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder {
         DB::table('projects')->delete();
         DB::table('project_user')->delete();
         DB::table('issues')->delete();
+        DB::table('comments')->delete();
         $this->call('UsersTableSeeder');
 		$this->call('ProjectsTableSeeder');
 		$this->call('IssuesTableSeeder');

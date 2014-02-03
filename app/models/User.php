@@ -39,6 +39,18 @@ class User extends ConfideUser {
         'password_confirmation' =>  'required|between:8,32',
     );
 
+
+    /**
+     * Array used by FactoryMuff to create Test objects
+     */
+    public static $factory = array(
+        'email' => 'email',
+        'password' => 'password',
+        'password_confirmation' => 'password',
+        'username' => 'string',
+        'admin' => 'boolean',
+    );
+
     public function projects() {
         return $this->belongsToMany('Project');
     }

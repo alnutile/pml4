@@ -34,6 +34,10 @@
 
         @include('notifications')
 
+        @if (!Auth::guest())
+            {{ CustomHelpers::breadCrumbs() }}
+        @endif
+
         @yield('content')
     </div>
 

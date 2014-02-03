@@ -10,6 +10,10 @@ class Issue extends Eloquent {
         'description'=>'required|min:20',
     );
 
+    public function project()
+    {
+        return $this->belongsTo('Project');
+    }
 
     public function comments()
     {

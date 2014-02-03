@@ -10,9 +10,10 @@
 
 <div class="col-md-6">
     {{ Form::model($model, array('route' => array('projects.issues.store'))) }}
-    @include('issues._form')
-    {{ Form::submit('Create Issue', array('class' => 'btn btn-success')) }}
 
+        @include('issues._form')
+
+        {{ Form::submit('Create Issue', array('class' => 'btn btn-success')) }}
     {{ Form::close() }}
 </div>
 @stop
