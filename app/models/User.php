@@ -24,10 +24,31 @@ class User extends ConfideUser {
         return (bool) $this->admin;
     }
 
+    static public function allPeopleSelectOptions() {
+        $people = User::all();
+        $options = array();
+        foreach($people as $person) {
+            $options[$person->id] = $person->email;
+        }
+        return $options;
+    }
+
     public static $rules = array(
         'email' => 'required|email|unique:users',
         'password' => 'required|between:8,32|confirmed',
         'password_confirmation' =>  'required|between:8,32',
+    );
+
+
+    /**
+     * Array used by FactoryMuff to create Test objects
+     */
+    public static $factory = array(
+        'email' => 'email',
+        'password' => 'password',
+        'password_confirmation' => 'password',
+        'username' => 'string',
+        'admin' => 'boolean',
     );
 
     public function projects() {

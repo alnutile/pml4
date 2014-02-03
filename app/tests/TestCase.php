@@ -2,6 +2,18 @@
 
 class TestCase extends Illuminate\Foundation\Testing\TestCase {
 
+    private function prepareForTests()
+    {
+        Artisan::call('migrate');
+        Mail::pretend(true);
+    }
+
+    public function setUp()
+    {
+        parent::setUp();
+        $this->prepareForTests();
+    }
+
 	/**
 	 * Creates the application.
 	 *

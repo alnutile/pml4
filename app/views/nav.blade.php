@@ -11,9 +11,6 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <!--logged in or not-->
                 @if(Auth::guest())
                     <li>{{ link_to_action('UserController@login', 'Sign In') }}</li>
