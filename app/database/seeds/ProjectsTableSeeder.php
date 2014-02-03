@@ -28,6 +28,8 @@ class ProjectsTableSeeder extends Seeder {
         $this->relateToUser1($project_id, $user_id, $dateTime);
         $project_id = DB::table('projects')->where('name', 'LIKE', 'Test 6')->pluck('id');
         $this->relateToUser1($project_id, $user_id, $dateTime);
+        $project_id = DB::table('projects')->where('name', 'LIKE', 'Test 7')->pluck('id');
+        $this->relateToUser1($project_id, $user_id, $dateTime);
 
         //User 2
         $user_id = DB::table('users')->where('username', 'LIKE', 'user')->pluck('id');

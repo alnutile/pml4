@@ -15,4 +15,19 @@ class BaseController extends Controller {
 		}
 	}
 
+    public function __call($method, $parameters)
+    {
+        return Response::error('404');
+    }
+
+    protected function param($param = null)
+    {
+        return array_get(Request::route()->parameters, $param, null);
+    }
+
+    protected function current_user()
+    {
+        return IoC::resolve('current_user');
+    }
+
 }

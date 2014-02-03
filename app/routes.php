@@ -16,24 +16,23 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+//Route::resource('users', 'UsersController');// Confide routes
 Route::get( 'signup',                 'UserController@signup');
-Route::post('register',                        'UserController@register');
+Route::post('register',               'UserController@register');
 Route::get( 'login',                  'UserController@login');
 Route::post('login',                  'UserController@do_login');
-Route::get( 'user/confirm/{code}',         'UserController@confirm');
+Route::get( 'user/confirm/{code}',    'UserController@confirm');
 Route::get( 'forgot_password',        'UserController@forgot_password');
 Route::post('forgot_password',        'UserController@do_forgot_password');
 Route::get( 'reset_password/{token}', 'UserController@reset_password');
 Route::post('reset_password',         'UserController@do_reset_password');
 Route::get( 'logout',                 'UserController@logout');
-Route::get('admin/users', 'UserController@adminUsers');
 
-//Route::resource('users', 'UsersController');// Confide routes
+Route::get('admin/users', 'UserController@adminUsers');
 
 Route::get('dashboard', 'DashboardController@index');
 
-Route::resource('projects', 'ProjectsController');
 Route::resource('users', 'UserController');
-Route::resource('issues', 'IssuesController');
-
-Route::resource('comments', 'CommentsController');
+Route::resource('projects', 'ProjectsController');
+Route::resource('projects.issues', 'IssuesController');
+Route::resource('projects.issues.comments', 'CommentsController');

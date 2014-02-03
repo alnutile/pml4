@@ -8,3 +8,7 @@ body {
 
 .login{padding-top: 65px;}
 .center{float: none; margin-left: auto; margin-right: auto;}
+
+a.white, a.visited, a.active {
+    color: white;
+}

@@ -32,6 +32,12 @@
         <div class="alert alert-{{ Session::get('type') }}">{{ Session::get('message') }}</div>
         @endif
 
+        @include('notifications')
+
+        @if (!Auth::guest())
+            {{ CustomHelpers::breadCrumbs() }}
+        @endif
+
         @yield('content')
     </div>
 

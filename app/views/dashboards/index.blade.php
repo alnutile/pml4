@@ -20,4 +20,13 @@
     </div>
 </div>
 
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">Related Actions</div>
+        <div class="panel-body">
+            {{ HTML::linkRoute('projects.create', 'Create Project', array(), array('class' => 'btn btn-info')) }}
+        </div>
+    </div>
+</div>
+
 @stop
