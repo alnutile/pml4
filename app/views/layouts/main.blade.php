@@ -28,9 +28,12 @@
 <div class="container">
 
     <div class="starter-template">
+        <!-- @TODO rework these messages into a partial -->
         @if (Session::has('message'))
-        <div class="alert alert-{{ Session::get('type') }}">{{ Session::get('message') }}</div>
+            <div class="alert alert-{{ Session::get('type') }}">{{ Session::get('message') }}</div>
         @endif
+
+        @include('emails.notifications')
 
         @include('notifications')
 

@@ -32,6 +32,16 @@ class Project extends BaseModel {
         return $options;
     }
 
+    public function getUsersEmails() {
+        $people = $this->users;
+        $options = array();
+        foreach($people as $person) {
+            $options[] = $person->email;
+        }
+        return $options;
+    }
+
+
     public function issues()
     {
         return $this->hasMany('Issue');
