@@ -2,8 +2,6 @@
 
 <p><a href="https://github.com/alnutile/pml4" target="_blank">https://github.com/alnutile/pml4</a></p>
 
-<p><img alt="" src="https://photos-6.dropbox.com/t/0/AAA1GCF2mTtb0s1auSN8bHpD-o35nmPWCiaS4tFzyvpV_Q/12/54803135/png/2048x1536/3/1391400000/0/2/Screenshot%202014-02-02%2021.00.03.png/1aYJjmaoGuRzexlxQJFxDzid7urK3GRs-8P0nvQ8SzY" style="width: 600px; height: 254px; margin: 5px; border-width: 1px; border-style: solid;" /></p>
-
 <p><img alt="" src="https://photos-1.dropbox.com/t/0/AAA4lWC850wd95jWn1-EynEI5Q46dVP2DESbLQTqMO0PEQ/12/54803135/png/2048x1536/3/1391407200/0/2/Screenshot%202014-02-02%2023.00.10.png/1j3TfBbkROJPsr773gyeXy1mLsVzHnoQxuW-V_07cdM" style="width: 500px; height: 269px; border-width: 1px; border-style: solid; margin: 5px;" /></p>
 
 <p>The goal will be a PM site that integrates with the github api since I have endless issues with clients getting confused using the Github interface for tickets. So this system will wrap around that.</p>
