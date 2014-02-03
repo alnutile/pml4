@@ -1,15 +1,37 @@
-## Base Install
+<p>Still has some work to be done for sure.&nbsp;</p>
 
-# Auth system in place using Confide
+<p><a href="https://github.com/alnutile/pml4" target="_blank">https://github.com/alnutile/pml4</a></p>
 
-https://github.com/Zizaco/confide
+<p><img alt="" src="https://photos-6.dropbox.com/t/0/AAA1GCF2mTtb0s1auSN8bHpD-o35nmPWCiaS4tFzyvpV_Q/12/54803135/png/2048x1536/3/1391400000/0/2/Screenshot%202014-02-02%2021.00.03.png/1aYJjmaoGuRzexlxQJFxDzid7urK3GRs-8P0nvQ8SzY" style="width: 600px; height: 254px; margin: 5px; border-width: 1px; border-style: solid;" /></p>
 
-# Generator for easy resources thanks to Jeffery Way
+<p><img alt="" src="https://photos-1.dropbox.com/t/0/AAA4lWC850wd95jWn1-EynEI5Q46dVP2DESbLQTqMO0PEQ/12/54803135/png/2048x1536/3/1391407200/0/2/Screenshot%202014-02-02%2023.00.10.png/1j3TfBbkROJPsr773gyeXy1mLsVzHnoQxuW-V_07cdM" style="width: 500px; height: 269px; border-width: 1px; border-style: solid; margin: 5px;" /></p>
 
-https://github.com/JeffreyWay/Laravel-4-Generators
+<p>The goal will be a PM site that integrates with the github api since I have endless issues with clients getting confused using the Github interface for tickets. So this system will wrap around that.</p>
 
-# Bootstrap (coming soon)
+<p>In the mean time</p>
 
-# Travis Setup (coming soon)
+<p>Projects are&nbsp;in place with many to many on Users</p>
 
-# Build process for assets (no so soon)
+<p>Issues are&nbsp;in place with a one to many on Projects, a One to One User</p>
+
+<p>Comments are that have one to one relationship to Issues.</p>
+
+<p>It is use the <a href="https://github.com/Zizaco/confide" target="_blank">Confide</a> auth system but right now only with an Admin role. Soon there will be Enforce, see notes below.</p>
+
+<p>Road map</p>
+
+<p>1. Email message to team on Project with new Issue and Comment</p>
+
+<p>2. Project links to GithubRepo</p>
+
+<p>3. Issue links to GithubRepo</p>
+
+<p>4. Comment links to GithubComment&nbsp;</p>
+
+<p>5. Freshbook integration</p>
+
+<p>6. Behat&nbsp;intergration&nbsp;using my <a href="https://github.com/alnutile/behat_editor" target="_blank">Behat Editor</a> work I did on drupal.</p>
+
+<p>7. Better user managment</p>
+
+<p>&nbsp;</p>
