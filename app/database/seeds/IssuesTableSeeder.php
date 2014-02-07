@@ -4,7 +4,7 @@ class IssuesTableSeeder extends Seeder {
 
 	public function run()
 	{
-
+        DB::table('issues')->truncate();
         $dateTime = new DateTime('now');
         $dateTime = $dateTime->format('Y-m-d H:i:s');
 

@@ -14,7 +14,8 @@
         "behat/mink-extension": "*",
         "behat/mink-sahi-driver": "*",
         "zizaco/factory-muff": "dev-master",
-        "doctrine/dbal": "dev-master"
+        "doctrine/dbal": "dev-master",
+        "mockery/mockery": "dev-master"
     },
 	"require": {
 		"laravel/framework": "4.1.*",

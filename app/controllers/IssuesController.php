@@ -2,6 +2,13 @@
 
 class IssuesController extends BaseController {
 
+    protected $notify;
+
+    public function __construct(IssueNotification $notify)
+    {
+        $this->notify = $notify;
+    }
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -39,7 +46,8 @@ class IssuesController extends BaseController {
             $issue->active = (isset($active)) ? 1 : 0;
             $issue->description = Input::get('description');
             $issue->save();
-            $this->notify($issue);
+
+            $this->notify->notify(array($issue));
             return Redirect::to("projects/$issue->project_id")
                 ->with('message', "Issue Created #" . $issue->id)
                 ->with('type', 'success');

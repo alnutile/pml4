@@ -2,12 +2,14 @@
 
 class CommentsController extends BaseController {
 
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function index()
+    protected $notify;
+
+    public function __construct(CommentNotification $notify)
+    {
+        $this->notify = $notify;
+    }
+
+    public function index()
 	{
         return View::make('comments.index');
 	}
@@ -35,19 +37,21 @@ class CommentsController extends BaseController {
             $comment->issue_id = Input::get('issue_id');
             $comment->github_id = Input::get('github_id');
             $comment->save();
-            $mailed = $this->notify($comment, $project_id, $issue_id);
+            $mailed = $this->notify->notify(array($comment, $project_id, $issue_id));
             $sent = implode(', ', $mailed["results"][1]);
             $failed = implode(', ', $mailed["results"][0]);
+            (empty($failed)) ? $failed = 'none' : null ;
+            ($mailed['failed'] === 0) ? $mailed['failed'] = 'none' : $mailed['failed'] = "Yes :(" ;
             return Redirect::to("projects/$project_id/issues/$issue_id")
                 ->with('message', "Comment Created #" . $comment->id)
                 ->with('type', 'success')
                 ->with('emailsSent', "Emails sent {$mailed['sent']}")
                 ->with('type', 'success')
-                ->with('emailsFailed', "Emailed failed {$mailed['failed']}")
+                ->with('emailsFailed', "Emailed Failed {$mailed['failed']}")
                 ->with('type', 'warning')
                 ->with('emailsWho', "Emailed {$sent}")
                 ->with('type', 'success')
-                ->with('emailsWhoFailed', "Emailed Failed {$failed}")
+                ->with('emailsWhoFailed', "Failed Emails are {$failed}")
                 ->with('type', 'danger');
         }
         return Redirect::to("projects/{$project_id}/issues/$issue_id/comments/create")
@@ -57,21 +61,7 @@ class CommentsController extends BaseController {
             ->withInput();
 	}
 
-    public function notify($comment, $project_id, $issue_id)
-    {
-        $mailed[0] = array();
-        $mailed[1] = array();
-        $mailed['results'] = null;
-        $project = Project::find($project_id);
-        $issue = Issue::find($issue_id);
-        $users = $project->getUsersEmails();
-        foreach($users as $key => $value) {
-            $mailer = new Mailers\Comments($value);
-            $results = $mailer->new_comment(compact('comment', 'project',  'issue'))->deliver();
-            $mailed[$results][] = $value;
-        }
-        return array('sent' => count($mailed[1]), 'failed' => count($mailed[0]), 'results' => $mailed);
-    }
+
 
 	/**
 	 * Display the specified resource.
