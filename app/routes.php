@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', function()
+Route::get('/', array('before' => 'auth', function()
 {
     return Redirect::to('dashboard');
-});
+}));
 
 //Route::resource('users', 'UsersController');// Confide routes
 Route::get( 'signup',                 'UserController@signup');
@@ -30,7 +30,7 @@ Route::get( 'logout',                 'UserController@logout');
 
 Route::get('admin/users', 'UserController@adminUsers');
 
-Route::get('dashboard', 'DashboardController@index');
+Route::get('dashboard', array('before' => 'auth', 'uses' => 'DashboardController@index'));
 
 Route::resource('users', 'UserController');
 Route::resource('projects', 'ProjectsController');

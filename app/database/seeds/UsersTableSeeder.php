@@ -4,6 +4,7 @@ class UsersTableSeeder extends Seeder {
 
 	public function run()
 	{
+        DB::table('users')->truncate();
         $dateTime = new DateTime('now');
         $dateTime = $dateTime->format('Y-m-d H:i:s');
         $users = array(

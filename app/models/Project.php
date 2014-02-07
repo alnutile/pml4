@@ -1,14 +1,9 @@
 <?php
 
-class Project extends BaseModel {
+class Project extends Eloquent {
 	protected $guarded = array();
 
     protected $fillable = array('name', 'description', 'active', 'accountingurl', 'giturl');
-
-    public function  __construct()
-    {
-        parent::__construct();
-    }
 
     public static $rules = array(
         'name'=>'required|min:2',
@@ -40,7 +35,6 @@ class Project extends BaseModel {
         }
         return $options;
     }
-
 
     public function issues()
     {

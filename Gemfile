@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+ruby '2.0.0'
+gem 'rb-fsevent'
+gem 'terminal-notifier-guard'
+gem 'guard-phpunit2'

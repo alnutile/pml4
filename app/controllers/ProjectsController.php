@@ -2,18 +2,19 @@
 
 class ProjectsController extends BaseController {
 
-     public function __construct() {
+     protected $user;
+     protected $project;
+
+     public function __construct(User $user, Project $project) {
+        $this->user = $user;
+        $this->project = $project;
         $this->beforeFilter('admin');
         $this->beforeFilter('csrf', array('on'=>'post'));
     }
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
+
 	public function index()
 	{
-        return View::make('projects.index');
+        return Redirect::to('/dashboard');
 	}
 
 	/**
@@ -23,8 +24,8 @@ class ProjectsController extends BaseController {
 	 */
 	public function create()
 	{
-        $model = new Project;
-        $options_all = User::allPeopleSelectOptions();
+        $model = new $this->project;
+        $options_all = $this->user->allPeopleSelectOptions($this->user->all());
         $options_selected = array();
         $submit = array('test' => "Create Project");
         return View::make('projects.create', compact('model', 'destination', 'submit', 'options_all', 'options_selected'));
@@ -40,7 +41,7 @@ class ProjectsController extends BaseController {
         //@TODO start using the BaseModel helper
         $validate = Validator::make(Input::all(), Project::$rules);
         if($validate->passes()) {
-            $project = new Project;
+            $project = new $this->project;
             $project->name = Input::get('name');
             $project->description = Input::get('description');
             $project->giturl = Input::get('giturl');
@@ -73,7 +74,7 @@ class ProjectsController extends BaseController {
 	 */
 	public function show($id)
 	{
-        $project = Project::find($id);
+        $project = $this->project->find($id);
         $users = $project->getAllPeople();
         $issues = $project->getAllIssues();
         return View::make('projects.show', compact('project', 'users', 'issues'));
@@ -87,8 +88,8 @@ class ProjectsController extends BaseController {
 	 */
 	public function edit($id)
 	{
-        $model = Project::find($id);
-        $options_all = User::allPeopleSelectOptions();
+        $model = $this->project->find($id);
+        $options_all = $this->user->allPeopleSelectOptions($this->user->all());
         $options_selected = $model->getUsersSelectedOptionList();
 
         return View::make('projects.edit', compact('model', 'options_all', 'options_selected'));
@@ -104,7 +105,7 @@ class ProjectsController extends BaseController {
 	{
         //@TODO start using the BaseModel helper
         $validate = Validator::make(Input::all(), Project::$rules);
-        $project = Project::find($id);
+        $project = $this->project->find($id);
         if($validate->passes()) {
             $inputs = Input::all();
             $project->name = $inputs['name'];
