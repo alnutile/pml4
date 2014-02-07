@@ -108,7 +108,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Way\Generators\GeneratorsServiceProvider',
         'Zizaco\Confide\ConfideServiceProvider',
-        'GuilhermeGuitte\BehatLaravel\BehatLaravelServiceProvider',
+        'GuilhermeGuitte\BehatLaravel\BehatLaravelServiceProvider'
 	),
 
 	/*

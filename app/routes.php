@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -36,3 +37,8 @@ Route::resource('users', 'UserController');
 Route::resource('projects', 'ProjectsController');
 Route::resource('projects.issues', 'IssuesController');
 Route::resource('projects.issues.comments', 'CommentsController');
+
+
+Route::get('github', 'GitHubService@index');
+Route::get('authorize', 'GitHubService@authorize');
+Route::get('callback', 'GitHubService@callback');

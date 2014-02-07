@@ -15,7 +15,8 @@
         "behat/mink-sahi-driver": "*",
         "zizaco/factory-muff": "dev-master",
         "doctrine/dbal": "dev-master",
-        "mockery/mockery": "dev-master"
+        "mockery/mockery": "dev-master",
+        "oodle/krumo": "*"
     },
 	"require": {
 		"laravel/framework": "4.1.*",
@@ -24,7 +25,8 @@
         "zizaco/testcases-laravel": "dev-master",
         "guilhermeguitte/behat-laravel": "dev-master",
         "way/laravel-test-helpers": "dev-master",
-        "mockery/mockery": "0.9.*@dev"
+        "mockery/mockery": "0.9.*@dev",
+        "knplabs/github-api": "1.3.*@dev"
         },
 	"autoload": {
 		"classmap": [

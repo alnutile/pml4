@@ -1,0 +1,6 @@
+<?php
+
+return array(
+    'guser'        => "SOMENAME",
+    'gpassword'    => "SOMEPASSWORD"
+);
