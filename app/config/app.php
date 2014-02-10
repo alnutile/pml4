@@ -108,7 +108,8 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Way\Generators\GeneratorsServiceProvider',
         'Zizaco\Confide\ConfideServiceProvider',
-        'GuilhermeGuitte\BehatLaravel\BehatLaravelServiceProvider'
+        'GuilhermeGuitte\BehatLaravel\BehatLaravelServiceProvider',
+        'PML4\GitHubServiceServiceProvider'
 	),
 
 	/*
@@ -175,6 +176,7 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
         'Confide'         => 'Zizaco\Confide\ConfideFacade',
+        'GitHubService'   => 'PML4\Facades\GitHubService'
 
 	),
 

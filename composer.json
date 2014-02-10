@@ -39,7 +39,10 @@
 			"app/mailers/Mailer.php",
 			"app/mailers/Issues.php",
 			"app/mailers/Comments.php"
-		]
+		],
+        "psr-0": {
+            "PML4" : "app/"
+        }
 	},
 	"scripts": {
 		"post-install-cmd": [
