@@ -38,19 +38,24 @@ class GitHubService extends \BaseController {
         try {
             $results = $this->client->api('issue')->all($repo_owner, $repo_name, array('state' => 'open'));
         } catch(\Exception $e) {
-            krumo($e->getMessage());
+            return $e->getMessage();
         }
 
-        if(!empty($results)) {
-            krumo($results);
-        }
-
-        return "Issues";
-
+        return $results;
     }
 
-    public function getAllProjects($repoName)
+    public function getAllProjects($repoOwner)
     {
+        try {
+
+            $results = $this->client->api('user')->setPerpage('200')->repositories($repoOwner);
+        }
+
+        catch(\Exception $e) {
+            return $e->getMessage();
+        }
+
+        return $results;
 
     }
 

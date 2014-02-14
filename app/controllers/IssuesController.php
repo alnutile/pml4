@@ -35,6 +35,7 @@ class IssuesController extends BaseController {
 	 */
 	public function store()
 	{
+
 		$validate = Validator::make(Input::all(), Issue::$rules);
         if($validate->passes()) {
             $issue = new Issue;
@@ -47,17 +48,25 @@ class IssuesController extends BaseController {
             $issue->description = Input::get('description');
             $issue->save();
 
-            $this->notify->notify(array($issue));
+            if(Request::wantsJson()) {
+                return Response::json(array('data' => $issue->toArray(), 'errors' => 0, 'message' => "Item saved"));
+            } else {
             return Redirect::to("projects/$issue->project_id")
                 ->with('message', "Issue Created #" . $issue->id)
                 ->with('type', 'success');
+            }
+            $this->notify->notify(array($issue));
         }
         $project_id = Input::get('project_id');
+        if(Request::wantsJson()) {
+            return Response::json(array('message' => "Error", 'errors' => $validate->errors(), 'inputs' => Input::all()));
+        } else {
         return Redirect::to("projects/{$project_id}/issues/create")
             ->with('message', "Seems to be an error with the form please review below")
             ->with('type', "danger")
             ->withErrors($validate)
             ->withInput();
+        }
 	}
 
     public function notify($issue)

@@ -1,0 +1,8 @@
+
+<div class="issues-to-get" ng-show="issues.length > 0">
+    <ul>
+        <li class="sync-all"><label><input class="sync" type="checkbox" value="all">All</label></li>
+        <li ng-repeat="issue in issues" id="{{ issue.id }}" ng-model="git_issues"><label><input type="checkbox" value="{{ issue.id }}" class="sync issue-row">{{ issue.title }}</label></li>
+    </ul>
+    <button type="button" class="sync-button btn btn-success" ng-click="issuesToSync()"><i class="glyphicon glyphicon-cog"></i>sync</button>
+</div>

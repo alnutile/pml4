@@ -9,9 +9,9 @@
     {{ Form::text('accountingurl', null, array('class' => 'form-control')) }}
 </div>
 
+
 <div class="form-group">
-    {{ Form::label('giturl', 'Git Url') }}
-    {{ Form::text('giturl', null, array('class' => 'form-control')) }}
+    {{ Form::select('giturl', $allGitHubProjects, $model->giturl, array('id' => 'github_repo')) }}
 </div>
 
 <div class="form-group">

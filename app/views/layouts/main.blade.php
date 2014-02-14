@@ -8,7 +8,10 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>PML4</title>
+
+    {{ HTML::script('/assets/js/jquery-1.11.0.min.js') }}
+    {{ HTML::script('/assets/js/app.js') }}
 
     <!-- Bootstrap core CSS -->
     {{ HTML::style('assets/css/bootstrap.min.css') }}
@@ -44,15 +47,17 @@
         @yield('content')
     </div>
 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+
 </div><!-- /.container -->
+    <!-- Placed at the end of the document so the pages load faster -->
 
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-
-{{ HTML::script('/assets/js/jquery-1.11.0.min.js') }}
 {{ HTML::script('/assets/js/bootstrap/bootstrap.min.js') }}
 {{ HTML::script('/assets/js/prettify.js') }}
+{{ HTML::script('/assets/js/noty/jquery.noty.js') }}
+{{ HTML::script('/assets/js/noty/default.js') }}
+{{ HTML::script('/assets/js/noty/top.js') }}
 </body>
 </html>

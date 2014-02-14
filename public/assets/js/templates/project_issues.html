@@ -1,0 +1,19 @@
+<table class="table table-condensed">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Active</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr ng-repeat="project_issue in project_issues" ng-model="project_issues">
+        <td>{{ project_issue.id }}</td>
+        <td><a href="/projects/{{project_id}}/issues/{{project_issue.id}}">{{project_issue.name}}</a></td>
+        <td>{{ project_issue.active }}</td>
+        <td>{{ project_issue.description }}</td>
+    </tr>
+    </tbody>
+</table>

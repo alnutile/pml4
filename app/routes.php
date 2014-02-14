@@ -5,7 +5,6 @@ Route::get('/', array('before' => 'auth', function()
     return Redirect::to('dashboard');
 }));
 
-//Route::resource('users', 'UsersController');// Confide routes
 Route::get( 'signup',                 'UserController@signup');
 Route::post('register',               'UserController@register');
 Route::get( 'login',                  'UserController@login');
@@ -31,7 +30,14 @@ Route::group(array('prefix' => 'github'), function() {
     Route::get('github', 'PML4\GitHubService@index');
     Route::get('authorize', 'PML4\GitHubService@authorize');
     Route::get('callback', 'PML4\GitHubService@callback');
-    Route::get('issues', function(){
-        return GitHubService::getIssues('alnutile', 'fis2');
+    Route::get('issues/{owner}/{repo}', function($owner, $repo){
+        return GitHubService::getIssues($owner, $repo);
     });
+    Route::get('projects/{owner}', function($owner){
+        return GitHubService::getAllProjects($owner);
+    });
+    Route::get('sync/project/{project_id}/{repo_owner}/{repo_name}', array('before' => 'auth', function($project_id, $repo_owner, $repo_name){
+        $sync = new \PML4\GitHubProjectsAndIssuesController();
+        return $sync->getIssuesThatAreNotLocal($project_id, $repo_owner, $repo_name);
+    }));
 });

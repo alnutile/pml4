@@ -25,10 +25,11 @@ class ProjectsController extends BaseController {
 	public function create()
 	{
         $model = new $this->project;
+        $allGitHubProjects = $this->getProjects();
         $options_all = $this->user->allPeopleSelectOptions($this->user->all());
         $options_selected = array();
         $submit = array('test' => "Create Project");
-        return View::make('projects.create', compact('model', 'destination', 'submit', 'options_all', 'options_selected'));
+        return View::make('projects.create', compact('allGitHubProjects', 'model', 'destination', 'submit', 'options_all', 'options_selected'));
 	}
 
 	/**
@@ -44,7 +45,7 @@ class ProjectsController extends BaseController {
             $project = new $this->project;
             $project->name = Input::get('name');
             $project->description = Input::get('description');
-            $project->giturl = Input::get('giturl');
+            $project->giturl = Input::get('github_repo');
             $project->accountingurl = Input::get('accountingurl');
             $active = Input::get('active');
             $project->active = (isset($active)) ? 1 : 0;
@@ -76,9 +77,27 @@ class ProjectsController extends BaseController {
 	{
         $project = $this->project->find($id);
         $users = $project->getAllPeople();
-        $issues = $project->getAllIssues();
-        return View::make('projects.show', compact('project', 'users', 'issues'));
+        $user = Auth::user();
+
+        list($repo_owner, $repo_name) = $this->getRepoNameAndOwner($project);
+        if(Request::wantsJson()) {
+            $issues = $project->issues->toArray();
+            return Response::json(array('message' => "Related issues", 'errors' => 0, 'data' => $issues));
+        } else {
+            $issues = $project->getAllIssues();
+            return View::make('projects.show', compact('project', 'users', 'issues', 'repo_owner', 'repo_name', 'user'));
+        }
 	}
+
+    protected function getRepoNameAndOwner($project)
+    {
+        if(!empty($project->giturl) && strpos($project->giturl, '/') !== FALSE) {
+            return explode('/', $project->giturl);
+        } else {
+            return array(null, null);
+        }
+
+    }
 
 	/**
 	 * Show the form for editing the specified resource.
@@ -89,10 +108,11 @@ class ProjectsController extends BaseController {
 	public function edit($id)
 	{
         $model = $this->project->find($id);
+        $allGitHubProjects = $this->getProjects();
         $options_all = $this->user->allPeopleSelectOptions($this->user->all());
         $options_selected = $model->getUsersSelectedOptionList();
 
-        return View::make('projects.edit', compact('model', 'options_all', 'options_selected'));
+        return View::make('projects.edit', compact('allGitHubProjects', 'model', 'options_all', 'options_selected'));
 	}
 
 	/**
@@ -143,6 +163,16 @@ class ProjectsController extends BaseController {
 	{
 		//
 	}
+
+    protected function getProjects()
+    {
+        $options = [];
+        $repos = GitHubService::getAllProjects(Config::get('app.guser'));
+        foreach($repos as $key => $value) {
+            $options[$value['full_name']] = $value['full_name'];
+        }
+        return $options;
+    }
 
 
 
