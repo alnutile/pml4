@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64bbcd4a-fca8-42f6-bfd2-4beeff3af0ef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/PML4/GitHubProjectsAndIssuesController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/templates/project_issues.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/templates/project_show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/sync_projects_issues.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/fonts/bootstrap/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/fonts/bootstrap/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/fonts/bootstrap/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.woff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LaravelVsRails-sf/erierb-laravel/application/migrations/2012_11_23_191016_add_admin_to_users_table.php" afterPath="$PROJECT_DIR$/../LaravelVsRails-sf/erierb-laravel/application/migrations/2012_11_23_191016_add_admin_to_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/PML4/GitHubService.php" afterPath="$PROJECT_DIR$/app/PML4/GitHubService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/IssuesController.php" afterPath="$PROJECT_DIR$/app/controllers/IssuesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ProjectsController.php" afterPath="$PROJECT_DIR$/app/controllers/ProjectsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/_form.blade.php" afterPath="$PROJECT_DIR$/app/views/projects/_form.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/main.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/main.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/show.blade.php" afterPath="$PROJECT_DIR$/app/views/projects/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tests/models/ProjectTest.php" afterPath="$PROJECT_DIR$/app/tests/models/ProjectTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="auth.iws" />
@@ -42,7 +26,44 @@
     <favorites_list name="auth" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="6" selection-start="1345" selection-end="1345" vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="1155">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="4" selection-start="841" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="2835">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectsController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/ProjectsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="5" selection-start="2318" selection-end="2318" vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2775">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Project.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/Project.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="6" selection-start="282" selection-end="282" vertical-scroll-proportion="0.07725322" vertical-offset="96" max-vertical-offset="795">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -60,7 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/PML4/GitHubServiceServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/vendor/knplabs/github-api/lib/Github/Client.php" />
         <option value="$PROJECT_DIR$/app/views/projects/_form.blade.php" />
@@ -76,15 +96,16 @@
         <option value="$PROJECT_DIR$/public/assets/js/templates/project_show.html" />
         <option value="$PROJECT_DIR$/public/assets/js/sync_projects_issues.js" />
         <option value="$PROJECT_DIR$/app/views/projects/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/tests/models/ProjectTest.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="561" />
+    <option name="x" value="31" />
     <option name="y" value="22" />
-    <option name="width" value="1354" />
-    <option name="height" value="1058" />
+    <option name="width" value="1245" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -112,6 +133,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -332,9 +354,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PML4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -452,16 +491,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="561" y="22" width="1354" height="1058" extended-state="0" />
-    <editor active="false" />
+    <frame x="31" y="22" width="1245" height="778" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47467726" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24446085" sideWeight="0.52532274" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22599705" sideWeight="0.52532274" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2257028" sideWeight="0.52532274" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34561127" sideWeight="0.244709" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -470,6 +508,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47467726" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -519,113 +558,90 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/PML4/GitHubProjectsAndIssuesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="45" selection-end="45" vertical-scroll-proportion="-0.64625853" vertical-offset="330" max-vertical-offset="930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_01_27_212156_create_projects_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="33" selection-start="390" selection-end="390" vertical-scroll-proportion="0.5782313" vertical-offset="0" max-vertical-offset="630" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ide_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="35" selection-start="5260" selection-end="5260" vertical-scroll-proportion="0.0" vertical-offset="1312" max-vertical-offset="1740">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1263" column="5" selection-start="31062" selection-end="31062" vertical-scroll-proportion="0.0" vertical-offset="18675" max-vertical-offset="42675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/projects/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="288" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.59210527" vertical-offset="465" max-vertical-offset="1080">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="52" column="288" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.59210527" vertical-offset="465" max-vertical-offset="1080" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Project.php">
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="5" selection-start="979" selection-end="979" vertical-scroll-proportion="0.82752293" vertical-offset="164" max-vertical-offset="795">
-          <folding />
-        </state>
+        <state line="17" column="40" selection-start="408" selection-end="408" vertical-scroll-proportion="0.44894367" vertical-offset="0" max-vertical-offset="568" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/ValidationServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="60" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.471831" vertical-offset="437" max-vertical-offset="1005" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/templates/project_show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="6" selection-start="513" selection-end="513" vertical-scroll-proportion="0.1891892" vertical-offset="0" max-vertical-offset="555" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Validator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2035" column="20" selection-start="46908" selection-end="46908" vertical-scroll-proportion="-0.12257405" vertical-offset="30525" max-vertical-offset="32370" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/templates/project_issues.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="78" selection-start="267" selection-end="267" vertical-scroll-proportion="0.16853933" vertical-offset="0" max-vertical-offset="979" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/way/laravel-test-helpers/src/Way/Tests/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="22" selection-start="2223" selection-end="2230" vertical-scroll-proportion="0.33193278" vertical-offset="1417" max-vertical-offset="5925" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/BaseModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.23952095" vertical-offset="0" max-vertical-offset="501" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/models/ProjectTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="5" selection-start="148" selection-end="148" vertical-scroll-proportion="0.2994012" vertical-offset="0" max-vertical-offset="1260" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="3" selection-start="300" selection-end="300" vertical-scroll-proportion="0.41916168" vertical-offset="0" max-vertical-offset="501" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/sync_projects_issues.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="685" selection-end="685" vertical-scroll-proportion="0.41916168" vertical-offset="0" max-vertical-offset="1320" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/IssuesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="42" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.39633027" vertical-offset="609" max-vertical-offset="2115">
+        <state line="64" column="5" selection-start="1986" selection-end="1986" vertical-scroll-proportion="1.9161676" vertical-offset="0" max-vertical-offset="2115" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="6" selection-start="1345" selection-end="1345" vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="4" selection-start="841" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="2835">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ProjectsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="36" selection-start="2252" selection-end="2252" vertical-scroll-proportion="0.13513513" vertical-offset="885" max-vertical-offset="2775">
+        <state line="67" column="5" selection-start="2318" selection-end="2318" vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2775">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/app.js">
+    <entry file="file://$PROJECT_DIR$/app/models/Project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="296" selection-end="296" vertical-scroll-proportion="0.34330985" vertical-offset="0" max-vertical-offset="568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="40" selection-start="408" selection-end="408" vertical-scroll-proportion="0.44894367" vertical-offset="0" max-vertical-offset="568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/ValidationServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="60" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.471831" vertical-offset="437" max-vertical-offset="1005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/templates/project_show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="513" selection-end="513" vertical-scroll-proportion="0.1891892" vertical-offset="0" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/sync_projects_issues.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="685" selection-end="685" vertical-scroll-proportion="-0.13381001" vertical-offset="341" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Validator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2035" column="20" selection-start="46908" selection-end="46908" vertical-scroll-proportion="-0.12257405" vertical-offset="30525" max-vertical-offset="32370">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/templates/project_issues.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="78" selection-start="267" selection-end="267" vertical-scroll-proportion="0.16853933" vertical-offset="0" max-vertical-offset="979">
+        <state line="10" column="6" selection-start="282" selection-end="282" vertical-scroll-proportion="0.07725322" vertical-offset="96" max-vertical-offset="795">
           <folding />
         </state>
       </provider>

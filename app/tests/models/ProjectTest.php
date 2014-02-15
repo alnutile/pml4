@@ -1,7 +1,7 @@
 <?php
 
 use Way\Tests\Factory;
-
+use Project;
 
 class ProjectTest extends TestCase {
     use Way\Tests\ModelHelpers;
